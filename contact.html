@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hubungi Saya</h1>
+
+<section class="contact-form">
+    <h2>Kirim Pesan</h2>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.name.label }}
+            {{ form.name(class="form-control") }}
+        </div>
+        <div>
+            {{ form.email.label }}
+            {{ form.email(class="form-control") }}
+        </div>
+        <div>
+            {{ form.message.label }}
+            {{ form.message(class="form-control") }}
+        </div>
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+</section>
+{% endblock %}

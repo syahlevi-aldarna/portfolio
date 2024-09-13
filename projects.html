@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="projects py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">My Projects</h1>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='img/eco-nft.jpg') }}" class="card-img-top" alt="Eco-Friendly NFT Marketplace">
+                    <div class="card-body">
+                        <h5 class="card-title">Eco-Friendly NFT Marketplace</h5>
+                        <p class="card-text">A carbon-neutral NFT platform using Proof of Stake blockchain, reducing energy consumption by 99% compared to traditional NFT markets.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='img/defi-protocol.jpg') }}" class="card-img-top" alt="DeFi Lending Protocol">
+                    <div class="card-body">
+                        <h5 class="card-title">DeFi Lending Protocol</h5>
+                        <p class="card-text">A secure and efficient DeFi lending platform with automated yield farming strategies, audited by leading blockchain security firms.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
